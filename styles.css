@@ -17,7 +17,7 @@ body{
 }
 
 .bottom__section{
-    animation: bottom 1s ease-out forwards ;
+    animation: bottom 1s ease-in forwards ;
     
     margin-top: 20px;
 }
@@ -46,6 +46,39 @@ body{
     }
 }
 
+
+.card{
+    /* animation: card 1s ease-in forwards; */
+}
+
+.card-img-top{
+    width: 100px;
+    height: 80px;
+    margin: 20px 0;
+}
+
+.card-body-div{
+    position: relative;
+    padding: 10px 50px 10px 0;
+    width: auto;
+    display: inline-block;
+}
+
+.bottom-p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 0 8px;
+    font-size: 12px;
+}
+
+.card-title{
+    white-space: nowrap;
+}
+
 @keyframes top {
     0%{
         padding: 0;
@@ -60,11 +93,22 @@ body{
 
 @keyframes bottom {
     0%{
-        left: 0;
-        opacity: 0;
+        /* left: 0; */
+        padding: 0px;
+        opacity: 1;
     }
 
     100%{
-        left: 10%;
+        padding-left: 10%;
+        /* left: 10%; */
+    }
+}
+
+@keyframes card {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
